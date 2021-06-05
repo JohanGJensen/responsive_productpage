@@ -1,0 +1,135 @@
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  row-gap: 80px;
+  column-gap: 78.5px;
+
+  width: 1140px;
+  min-height: 430px;
+  margin: 80px auto;
+}
+
+.productCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 300px;
+  height: 430px;
+  box-shadow: 0px 0px 1.2px 1.2px rgba(0, 0, 0, 0.15);
+}
+
+.productCard:hover {
+  background-color: #f2f0f0;
+  box-shadow: 0px 0px 1.4px 1.4px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.3s;
+}
+
+.tagsWrapper {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 279px;
+  height: auto;
+  top: 16px;
+  left: 16px;
+}
+
+.tag {
+  color: #ffffff;
+  font-family: GT-America-Extended-Bold;
+  font-size: 10px;
+  padding: 2px 5px;
+  margin: 0 4px 4px 0;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.iconWrapper {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.nameWrapper {
+  width: 296px;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.productName,
+.pricePrevious,
+.priceCurrent,
+.price {
+  font-family: GT-America-Extended-Bold;
+  font-size: 14px;
+  color: #212222;
+  min-width: 70px;
+}
+.pricePrevious,
+.priceCurrent,
+.price {
+  text-align: right;
+}
+.pricePrevious {
+  text-decoration: line-through;
+  text-decoration-color: #fa4616;
+  text-decoration-thickness: 2px;
+}
+.priceCurrent {
+  color: #fa4616;
+}
+
+.productPayment {
+  font-family: GT-America-Extended-Bold;
+  font-size: 10px;
+  color: #919191;
+}
+
+.infoWrapper {
+  width: 296px;
+  height: 78px;
+}
+
+@media screen and (min-width: 300px) {
+  .productContainer {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .productContainer {
+    width: 327px;
+  }
+
+  .productCard {
+    width: 327px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .productContainer {
+    width: 720px;
+    column-gap: 65px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .productContainer {
+    width: 1140px;
+    column-gap: 78.5px;
+  }
+}
