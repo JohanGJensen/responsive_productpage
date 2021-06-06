@@ -9,8 +9,8 @@ import { FilterOptions } from "../types/filter";
 interface FilterProps {}
 
 const filterOptions: Array<FilterOptions> = [
-  { text: "Speakers" },
-  { text: "Grills" },
+  { text: "Products" },
+  { text: "Optional" },
   { text: "Accessories" },
   { text: "Bundles" },
   { text: "Special Editions" },
